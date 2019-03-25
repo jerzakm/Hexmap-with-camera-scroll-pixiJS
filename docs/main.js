@@ -51833,7 +51833,7 @@ class HexMap extends PIXI.Container {
                 hex.y = loc.y;
                 hex.on('pointerdown', onClick);
                 function onClick () {
-                    console.log(`hexCoord: ${hex.cx};${hex.cy} canvasLoc: ${hex.x};${hex.y}`);
+                    alert(`hexCoord: ${hex.cx};${hex.cy} canvasLoc: ${hex.x};${hex.y}`);
                 }
                 this.addChild(hex);
             }

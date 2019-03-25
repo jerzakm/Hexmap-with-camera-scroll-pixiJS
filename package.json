@@ -6,7 +6,7 @@
   "scripts": {
     "webpack": "webpack --config webpack.config.js",
     "browsersync": "browser-sync start --server --watch",
-    "bs": "browser-sync dist -w",
+    "bs": "browser-sync docs -w",
     "start": "concurrently \"npm:webpack\" \"npm:bs\""
   },
   "repository": {
