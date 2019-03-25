@@ -70,7 +70,7 @@ function createGui() {
     let gui = new dat.GUI();
     gui.add(options, 'worldWidth', 0, 10000);
     gui.add(options, 'worldHeight', 0, 10000);
-    gui.add(options, 'hexSize', 1, 1000);
+    gui.add(options, 'hexSize', 10, 200);
     gui.add(options, 'flat', [true,false]);
     gui.add(options, 'render');
 }
