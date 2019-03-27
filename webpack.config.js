@@ -1,11 +1,11 @@
 const path = require("path");
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     entry: {
         main: "./src/index.js"
     },
-    devtool: "none",
+    //devtool: "none",
     devServer: {
        contentBase: '.',
        hot: true
