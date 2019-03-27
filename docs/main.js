@@ -45953,7 +45953,7 @@ module.exports = function (_Plugin) {
 /*!*********************************************!*\
   !*** ./node_modules/pixi.js/lib/pixi.es.js ***!
   \*********************************************/
-/*! exports provided: accessibility, extract, interaction, prepare, utils, Application, AbstractRenderer, Attribute, BaseRenderTexture, BaseTexture, BatchDrawCall, BatchGeometry, BatchRenderer, Buffer, CubeTexture, Filter, Framebuffer, GLProgram, GLTexture, Geometry, ObjectRenderer, Program, Quad, QuadUv, RenderTexture, Renderer, Shader, SpriteMaskFilter, State, System, Texture, TextureMatrix, TextureUvs, UniformGroup, autoDetectRenderer, checkMaxIfStatementsInShader, defaultFilterVertex, defaultVertex, generateMultiTextureShader, resources, systems, AppLoaderPlugin, Loader, LoaderResource, TextureLoader, ParticleContainer, ParticleRenderer, Spritesheet, SpritesheetLoader, TilingSprite, TilingSpriteRenderer, BitmapFontLoader, BitmapText, Ticker, TickerPlugin, UPDATE_PRIORITY, BLEND_MODES, DRAW_MODES, ENV, FORMATS, GC_MODES, MIPMAP_MODES, PRECISION, RENDERER_TYPE, SCALE_MODES, TARGETS, TYPES, WRAP_MODES, Bounds, Container, DisplayObject, GRAPHICS_CURVES, Graphics, GraphicsData, GraphicsGeometry, Circle, DEG_TO_RAD, Ellipse, GroupD8, Matrix, ObservablePoint, PI_2, Point, Polygon, RAD_TO_DEG, Rectangle, RoundedRectangle, SHAPES, Transform, Mesh, MeshBatchUvs, MeshGeometry, MeshMaterial, NineSlicePlane, PlaneGeometry, RopeGeometry, SimpleMesh, SimplePlane, SimpleRope, Runner, Sprite, AnimatedSprite, TEXT_GRADIENT, Text, TextMetrics, TextStyle, isMobile, settings, VERSION, filters, useDeprecated */
+/*! exports provided: accessibility, extract, interaction, prepare, utils, VERSION, filters, useDeprecated, Application, AbstractRenderer, Attribute, BaseRenderTexture, BaseTexture, BatchDrawCall, BatchGeometry, BatchRenderer, Buffer, CubeTexture, Filter, Framebuffer, GLProgram, GLTexture, Geometry, ObjectRenderer, Program, Quad, QuadUv, RenderTexture, Renderer, Shader, SpriteMaskFilter, State, System, Texture, TextureMatrix, TextureUvs, UniformGroup, autoDetectRenderer, checkMaxIfStatementsInShader, defaultFilterVertex, defaultVertex, generateMultiTextureShader, resources, systems, AppLoaderPlugin, Loader, LoaderResource, TextureLoader, ParticleContainer, ParticleRenderer, Spritesheet, SpritesheetLoader, TilingSprite, TilingSpriteRenderer, BitmapFontLoader, BitmapText, Ticker, TickerPlugin, UPDATE_PRIORITY, BLEND_MODES, DRAW_MODES, ENV, FORMATS, GC_MODES, MIPMAP_MODES, PRECISION, RENDERER_TYPE, SCALE_MODES, TARGETS, TYPES, WRAP_MODES, Bounds, Container, DisplayObject, GRAPHICS_CURVES, Graphics, GraphicsData, GraphicsGeometry, Circle, DEG_TO_RAD, Ellipse, GroupD8, Matrix, ObservablePoint, PI_2, Point, Polygon, RAD_TO_DEG, Rectangle, RoundedRectangle, SHAPES, Transform, Mesh, MeshBatchUvs, MeshGeometry, MeshMaterial, NineSlicePlane, PlaneGeometry, RopeGeometry, SimpleMesh, SimplePlane, SimpleRope, Runner, Sprite, AnimatedSprite, TEXT_GRADIENT, Text, TextMetrics, TextStyle, isMobile, settings */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51806,7 +51806,7 @@ class HexMap extends PIXI.Container {
         return this;
     }
     setFlat(flat){
-        this.flat=flat;
+        this.flat=JSON.parse(flat)
         return this;
     }
     getHexMapSize(){
