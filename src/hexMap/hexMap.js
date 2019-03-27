@@ -51,7 +51,7 @@ export class HexMap extends PIXI.Container {
         return this;
     }
     setFlat(flat){
-        this.flat=flat;
+        this.flat=JSON.parse(flat)
         return this;
     }
     getHexMapSize(){
